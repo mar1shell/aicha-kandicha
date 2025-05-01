@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --deep-black: #0d0d0d;
+  --night-gray: #252525;
+  --blood-red: #8b0000;
+  --antique-gold: #d4af37;
+}
+
+@layer base {
+  body {
+    @apply bg-deep-black text-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-cinzel text-antique-gold;
+  }
+
+  p {
+    @apply font-raleway;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8 py-8;
+  }
+
+  .title-gradient {
+    @apply bg-gradient-to-r from-antique-gold to-amber-300 bg-clip-text text-transparent;
+  }
+
+  .card-dark {
+    @apply bg-night-gray border border-antique-gold/30 rounded-md p-6 transition-all duration-300 hover:border-antique-gold;
+  }
+
+  .btn-primary {
+    @apply bg-blood-red text-white px-6 py-3 rounded-md font-medium transition-all hover:bg-blood-red/80;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border border-antique-gold text-antique-gold px-6 py-3 rounded-md font-medium transition-all hover:bg-antique-gold/10;
+  }
+
+  .moroccan-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .timeline-connector {
+    @apply absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-antique-gold/80 to-antique-gold/20 top-0;
+  }
+
+  .timeline-dot {
+    @apply absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-antique-gold;
+  }
+
+  .gallery-item {
+    @apply relative overflow-hidden rounded-md border-2 border-antique-gold/50 transition-all duration-300 hover:border-antique-gold hover:scale-[1.02];
+  }
+
+  .video-container {
+    @apply relative w-full overflow-hidden rounded-md border-2 border-antique-gold/70 shadow-lg shadow-antique-gold/10;
+  }
+}
+
+@layer utilities {
+  .text-shadow-gold {
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
