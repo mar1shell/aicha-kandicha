@@ -16,7 +16,9 @@ const NavigationCard = ({ title, description, href, imageSrc }: NavigationCardPr
           <Image
             src={imageSrc || "/placeholder.svg"}
             alt={title}
-            fill
+            layout="responsive"
+            width={500}
+            height={300}
             className="object-cover transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-deep-black to-transparent opacity-70"></div>
