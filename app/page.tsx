@@ -66,7 +66,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold font-cinzel text-antique-gold mb-10 text-center">Notre documentaire</h2>
           <div className="max-w-4xl mx-auto">
-            <VideoPlayer videoId="dQw4w9WgXcQ" title="Documentaire sur Aïcha Kandicha" />
+            <VideoPlayer videoId="ZKN_HQH0YSk" title="Documentaire sur Aïcha Kandicha" />
             <div className="mt-6 text-center">
               <p className="text-gray-300 font-raleway italic">
                 Documentaire réalisé dans le cadre du projet universitaire ENSAM Casablanca

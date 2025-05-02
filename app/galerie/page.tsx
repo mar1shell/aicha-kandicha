@@ -50,10 +50,10 @@ export default function Galerie() {
         {/* Video section */}
         <div className="max-w-4xl mx-auto mt-16">
           <h2 className="text-2xl font-bold font-cinzel text-antique-gold mb-6 text-center">Notre documentaire</h2>
-          <VideoPlayer videoId="dQw4w9WgXcQ" title="Documentaire sur Aïcha Kandicha" />
+          <VideoPlayer videoId="ZKN_HQH0YSk" title="Documentaire sur Aïcha Kandicha" />
           <div className="mt-4 text-center">
             <p className="text-gray-300 font-raleway italic">
-              Documentaire réalisé dans le cadre du projet universitaire ENSAM Casablanca
+              Documentaire réalisé dans le cadre du projet universitaire d'Arts et Patrimoine - ENSAM Casablanca
             </p>
           </div>
         </div>
